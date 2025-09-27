@@ -1,1 +1,4 @@
 .venv
+core/__pycache__
+produtos/__pycache__
+produtos/migrations/__pycache__
