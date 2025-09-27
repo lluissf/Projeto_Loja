@@ -1,7 +1,7 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .models import Produto
+from .serializers import ProdutoSerializer
 
-# Create your views here.
-from django.http import HttpResponse
-
-def home(request):
-    return HttpResponse("Bem-vindo à BSI4 Store!")
+class ProdutoViewSet(viewsets.ModelViewSet):
+  queryset = Produto.objects.all()
+  serializer_class = ProdutoSerializer
