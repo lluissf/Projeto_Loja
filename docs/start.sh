@@ -21,7 +21,7 @@ fi
 echo "[1/3] Iniciando o backend Django em segundo plano..."
 cd ../backend_django
 source .venv/bin/activate
-nohup python manage.py runserver > ../backend.log 2>&1 &
+nohup python manage.py runserver > ../docs/log/backend.log 2>&1 &
 BACKEND_PID=$!
 cd ..
 echo "Backend Django iniciado (PID: $BACKEND_PID)"
