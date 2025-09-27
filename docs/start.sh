@@ -19,7 +19,7 @@ if [ ! -d "../frontend_vue/node_modules" ]; then
 fi
 
 echo "[1/3] Iniciando o backend Django em segundo plano..."
-cd backend_django
+cd ../backend_django
 source .venv/bin/activate
 nohup python manage.py runserver > ../backend.log 2>&1 &
 BACKEND_PID=$!
