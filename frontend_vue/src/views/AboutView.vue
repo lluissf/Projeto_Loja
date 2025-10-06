@@ -7,5 +7,5 @@
 <style> 
 </style>
 
-<script default>
+<script setup>
 </script>

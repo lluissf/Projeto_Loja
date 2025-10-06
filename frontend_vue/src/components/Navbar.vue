@@ -7,6 +7,7 @@
             <nav>
                 <RouterLink to="/" class="text-gray-600 hover:text-gray-800 mx-2">Home</RouterLink>
                 <RouterLink to="/about" class="text-gray-600 hover:text-gray-800 mx-2">About</RouterLink>
+                <RouterLink to="/products" class="text-gray-600 hover:text-gray-800 mx-2">Produtos</RouterLink>
             </nav>
         </div>
     </header>
