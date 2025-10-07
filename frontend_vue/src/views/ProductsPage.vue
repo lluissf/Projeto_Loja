@@ -1,7 +1,8 @@
 <template>
-    <div class="">
-        <h1>Lista de Produtos</h1>
-        <ul>
+    <div class="container mx-auto px-4 py-4">
+        <h1 class="text-2xl font-bold mb-4">Lista de Produtos</h1>
+        <hr class="mb-4">
+        <ul class="list-disc list-inside">
             <li v-for="produto in produtos" :key="produto.id">
                 {{ produto.nome }} - {{ produto.preco }}
             </li>
