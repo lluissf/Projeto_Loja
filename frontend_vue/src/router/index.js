@@ -1,24 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router' 
-
+import { routes } from './rotas.js'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: () => import('../views/HomeView.vue'),
-    },
-    {
-      path: '/about',
-      name: 'about', 
-      component: () => import('../views/AboutView.vue'),
-    },
-    {
-      path: '/products',
-      name: 'Produtos', 
-      component: () => import('../views/ProductsView.vue'),
-    },
-  ],
+  routes: routes
 })
 
 export default router
